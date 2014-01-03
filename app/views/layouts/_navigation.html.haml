@@ -1,4 +1,4 @@
 %ul.nav
   - if current_user.present?
-    %li= link_to 'Sign out', destroy_user_session_path, method: :delete, class: ''
+    = link_to('', destroy_user_session_path, method: :delete, class: 'icon-logout')
   = render 'layouts/navigation_links'
