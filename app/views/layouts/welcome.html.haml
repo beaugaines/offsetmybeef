@@ -10,8 +10,10 @@
   %body
     %header
       .topcoat-navigation-bar
-        .topcoat-navigation-bar__item.left.full
+        .topcoat-navigation-bar__item.left.quarter
           = image_tag('bull_head.png', size: '75x88')
+        .topcoat-navigation-bar__item.center.half
+          %h1 Offset My Beef
     %main{:role => "main"}
       .centered
         = render 'layouts/messages'
