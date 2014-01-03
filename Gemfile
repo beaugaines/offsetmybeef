@@ -11,8 +11,13 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem "devise"
 gem "haml-rails"
+gem 'topcoat-rails'
 gem "figaro"
 gem "gravtastic"
+
+group :development do
+  gem 'rails_layout'
+end
 
 group :development, :test do
   gem "pry-rails"
