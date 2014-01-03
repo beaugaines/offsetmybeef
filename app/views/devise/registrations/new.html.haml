@@ -1,0 +1,14 @@
+%h2 Sign up
+= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+  = devise_error_messages!
+  .tb-margin-divs
+    = f.email_field :email, :autofocus => true, class: 'topcoat-text-input', placeholder: 'Email'
+  .tb-margin-divs
+    = f.password_field :password, class: 'topcoat-text-input', placeholder: 'Password'
+  .tb-margin-divs
+    = f.password_field :password_confirmation, class: 'topcoat-text-input', placeholder: 'Confirm password'
+  .tb-margin-divs
+    = f.submit "Sign up", class: 'topcoat-button'
+  .tb-margin-divs
+    %small Already have an account?
+= render "devise/shared/links"
