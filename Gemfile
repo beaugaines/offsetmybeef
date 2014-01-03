@@ -13,6 +13,7 @@ gem "devise"
 gem "haml-rails"
 gem 'topcoat-rails'
 gem "humane-rails"   # nice js alerts
+gem 'entypo-rails'   # nice icon font lib
 gem "figaro"
 gem "gravtastic"
 

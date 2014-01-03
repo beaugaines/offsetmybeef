@@ -14,7 +14,8 @@
           = image_tag('bull_head.png', size: '75x88')
         .topcoat-navigation-bar__item.center.half
           %h1 Offset My Beef
-      = render 'layouts/navigation'
+        .topcoat-navigation-bar__item.right.quarter
+          = render 'layouts/navigation'
     %main{:role => "main"}
       = raw humane_flash_messages
       = yield

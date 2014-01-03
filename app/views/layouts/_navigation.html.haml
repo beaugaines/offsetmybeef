@@ -1,3 +1,4 @@
 %ul.nav
-  %li= link_to 'Home', root_path
+  - if current_user.present?
+    %li= link_to 'Sign out', destroy_user_session_path, method: :delete, class: ''
   = render 'layouts/navigation_links'
