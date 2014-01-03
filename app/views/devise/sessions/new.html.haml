@@ -1,16 +1,18 @@
 %h2 Sign in
 = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
-  %div
-    = f.label :email
-    %br/
-    = f.email_field :email, :autofocus => true
-  %div
-    = f.label :password
-    %br/
-    = f.password_field :password
+  = devise_error_messages!
+  .tb-margin-divs
+    = f.email_field :email, :autofocus => true, class: 'topcoat-text-input', placeholder: 'Email'
+  .tb-margin-divs
+    = f.password_field :password, class: 'topcoat-text-input', placeholder: 'Password'
+
   - if devise_mapping.rememberable?
-    %div
-      = f.check_box :remember_me
-      = f.label :remember_me
-  %div= f.submit "Sign in"
-= render "devise/shared/links"
+    .tb-margin-divs
+      %label.topcoat-checkbox{for: "user_remember_me"}
+        %input#checkbox3{"aria-labelledby" => "remember_me-label", type: "checkbox", id: "user_remember_me", for: 'user_remember_me'}/
+        .topcoat-checkbox__checkmark
+        %span#remember_me-label.checkbox-label Remember Me
+    
+  %div= f.submit "Sign in", class: 'topcoat-button'
+.tb-margin-divs
+  = render "devise/shared/links"
