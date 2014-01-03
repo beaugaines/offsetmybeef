@@ -16,5 +16,6 @@
           %h1 Offset My Beef
     %main{:role => "main"}
       .centered
-        = render 'layouts/messages'
+        /= render 'layouts/messages'
+        = raw humane_flash_messages
         = yield
