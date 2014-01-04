@@ -11,5 +11,5 @@ Offset.destroy_all
 
 #User.create!(email: 'beaugaines@yahoo.com', password: 'password', password_confirmation: 'password')
 
-Offset.create!(name: 'Hamburger', price: '50', permalink: 'hamburger', description: 'The typical hamburger has a carbon footprint of 3 lbs of carbon dioxide.')
-Offset.create!(name: 'Steak', price: '100', permalink: 'steak', description: 'The typical steak has a carbon footprint of 5 lbs of carbon dioxide.')
+Offset.create!(name: 'Hamburger', price: '50', permalink: 'hamburger-offset', description: 'The typical hamburger has a carbon footprint of 3 lbs of carbon dioxide.')
+Offset.create!(name: 'Steak', price: '100', permalink: 'steak-offset', description: 'The typical steak has a carbon footprint of 5 lbs of carbon dioxide.')
