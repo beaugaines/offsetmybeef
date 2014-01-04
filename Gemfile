@@ -39,5 +39,6 @@ end
 group :production do
   gem "simple_form"
   gem "rails_12factor"
+  gem 'heroku-deflater'
 end
 
