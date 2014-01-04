@@ -5,6 +5,8 @@ Offsetmybeef::Application.routes.draw do
 
   resources :offsets, only: [:index]
 
+  resources :transactions, only: [:new, :create]
+
   get '/buy/:permalink', to: 'transactions#new', as: :show_buy
   post '/buy/:permalink', to: 'transactions#create', as: :buy
 
