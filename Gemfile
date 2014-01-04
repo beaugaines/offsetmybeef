@@ -16,6 +16,7 @@ gem "humane-rails"   # nice js alerts
 gem 'entypo-rails'   # nice icon font lib
 gem "figaro"
 gem "gravtastic"
+gem 'stripe'
 
 group :development do
   gem 'rails_layout'

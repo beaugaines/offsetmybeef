@@ -89,4 +89,7 @@ Offsetmybeef::Application.configure do
     domain: 'heroku.com',
     authentication: :plain
   }
+  config.action_mailer.default_url_options = {
+    host: 'offsetmybeef.herokuapp.com'
+  }
 end
