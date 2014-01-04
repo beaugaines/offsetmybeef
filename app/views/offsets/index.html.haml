@@ -1,0 +1,6 @@
+%h3 Available offsets
+
+- @offsets.each do |offset|
+  %h3= offset.name
+  %p= number_to_currency(offset.price)
+  %p= offset.description
