@@ -1,5 +1,8 @@
 %h2 My recent offsets
 
-%p blah blah blah...
+- @user.sales.each do |sale|
+  %p= sale.name
+  %p= formatted_price(sale.price)
+  %p= "#{time_ago_in_words(sale.created_at)} ago"
 
 = link_to 'View all offsets', offsets_path

@@ -2,6 +2,6 @@
 
 - @offsets.each do |offset|
   %h3= offset.name
-  %p= number_to_currency(offset.price)
+  %p= formatted_price(offset.price)
   %p= offset.description
-  = link_to 'Buy offset', '', class: 'topcoat-button--cta'
+  = link_to 'Buy offset', show_buy_path(offset.permalink), class: 'topcoat-button--cta'
