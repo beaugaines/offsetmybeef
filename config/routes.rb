@@ -7,6 +7,9 @@ Offsetmybeef::Application.routes.draw do
 
   resources :transactions, only: [:new, :create]
 
+  get '/about', to: 'pages#about', as: :about
+  get '/offsets-explained', to: 'pages#about', as: :offset_explanation
+
   get '/buy/:permalink', to: 'transactions#new', as: :show_buy
   post '/buy/:permalink', to: 'transactions#create', as: :buy
 
