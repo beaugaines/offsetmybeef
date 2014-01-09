@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Offsetmybeef::Application.config.secret_key_base = 'ab51e04d6e0ef36895ea4330e2a4a1a9b9e528e6752225440b0b602504050c8b152839111dd3c9a79b5ed42ced38953b64c9b8e7b5b36c5aa5d2e84983b00762'
+Offsetmybeef::Application.config.secret_key_base = ENV['SECRET_TOKEN'] || 'ab51e04d6e0ef36895ea4330e2a4a1a9b9e528e6752225440b0b602504050c8b152839111dd3c9a79b5ed42ced38953b64c9b8e7b5b36c5aa5d2e84983b00762'
