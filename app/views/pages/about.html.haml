@@ -9,4 +9,6 @@
   %h1
     %em But give back to the world that gave it to you!
 
-  = link_to 'Learn more about our offsets', page_path('offsets-explained')
+  = link_to 'Learn more about our offsets', page_path('offsets-explained'), class: 'topcoat-button--cta'
+  - unless current_user
+    = render 'layouts/devise_auth_links'
