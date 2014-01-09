@@ -1,9 +1,19 @@
 = title('Offsets Explained')
 
-.centered
+.centered.constrained
   %h2
     We buy our carbon offsets from 
     = link_to(image_tag('carbon_fund_logo.png', size: '220x50', class: 'carbon-fund-logo'), 'http://www.carbonfund.com', target: '_blank')
   %p We buy in increments of $100 - serving as a sort of carbon offset bank.
   %p When you buy an offset, the value of the bank is depleted.
   %p When the bank is empty, it is automatically replenished with another $100 offset from CarbonFund!
+  %p
+    The current value of our bank is
+    %b $62
+  %p 
+    In the last week 10 people have bought 
+    %b $15 dollars
+    worth of offsets!
+  %h3
+    Ready to start offsetting? Sign up
+    = link_to 'here', new_user_registration_path
