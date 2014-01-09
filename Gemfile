@@ -17,7 +17,6 @@ gem 'entypo-rails'   # nice icon font lib
 gem "figaro"
 gem "gravtastic"
 gem 'stripe'
-gem 'high_voltage'
 
 group :development do
   gem 'rails_layout'
